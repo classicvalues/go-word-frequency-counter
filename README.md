@@ -1,11 +1,10 @@
 # Golang Word Frequency Counter
-Relevant word frequency counter made with Golang.
+Word frequency counter made with Golang by @dubirajara.
 
-To relevant words classification, i used some stop words from resource: https://github.com/igorbrigadir/stopwords
 
 ## How to use?
 
 ```sh
-go run main.go "https://storage.googleapis.com/apache-beam-samples/shakespeare/romeoandjuliet.txt"
+go run main.go "https://[example_WebPage].com/{File_Location]"
 ```
-> An report file **word_frequencies_report.csv** will be created with the word frequency.  
+> Report file **word_frequencies_report.csv** will be created with the word frequency.  
