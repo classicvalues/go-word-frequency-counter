@@ -51,15 +51,6 @@ func cleanText(text string) string {
 	return proccessedWord
 }
 
-func checkStopWords(word string) bool {
-	for _, item := range stopwords.StopWords() {
-		if item == word {
-			return true
-		}
-	}
-	return false
-}
-
 func sortedWords(words map[string]int) []Word {
 	var sorted []Word
 	for k, v := range words {
@@ -73,7 +64,7 @@ func sortedWords(words map[string]int) []Word {
 }
 
 func saveCsvResults(words map[string]int) {
-	file, err := os.Create("./word_frequencies_report.csv")
+	file, err := os.Create("./word_frequencies_for_text_file.csv")
 	checkError("Cannot create file", err)
 	defer file.Close()
 
